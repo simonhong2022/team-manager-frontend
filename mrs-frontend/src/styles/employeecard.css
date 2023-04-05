@@ -1,0 +1,11 @@
+.employeecard-main {
+    margin-bottom: 20px;
+    padding: 0px 50px;
+}
+
+@media (min-width: 768px) {
+    .employeecard-main {
+        margin-bottom: 20px;
+        padding: 5px 50px;
+    }
+}

@@ -1,0 +1,35 @@
+.teamcard-main {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: center;
+    padding: 5px 50px;
+}
+
+.teamcard-employee-details {
+    position: relative;
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: grab;
+}
+
+.teamcard-employee-details:hover {
+    border: 1px solid blue;
+}
+
+@media (min-width: 768px) {
+    .teamcard-main {
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: white;
+        justify-content: center;
+        padding: 15px 50px;
+    }
+}

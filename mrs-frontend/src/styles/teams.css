@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+.teams-main {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.teams-navbar {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(120,100,180);;
+    height: 2.5rem;
+    padding-top: 8px;
+}
+
+.teams-navlink {
+    margin: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.teams-body-container {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.teams-content-wrap {
+    padding-bottom: 3rem;
+}
+
+.teams-add-info {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.ui.orange.icon.button {
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.ui.tiny.button {
+    margin-left: 20px;
+}
+
+.signin-container {
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.signin-box {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signin-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.teams-footer {
+    position: absolute;
+    bottom: 0%;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(120,100,180);;
+    font-weight: normal;
+    text-align: center;
+    line-height: 3rem;
+}
+
+@media (min-width: 768px) {
+    .teams-TeamCard-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
