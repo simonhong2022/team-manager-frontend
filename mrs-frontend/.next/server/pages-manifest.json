@@ -1,0 +1,13 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/employees": "pages/employees.html",
+  "/employees/[id]": "pages/employees/[id].html",
+  "/": "pages/index.html",
+  "/login": "pages/login.html",
+  "/teams/[teamid]": "pages/teams/[teamid].html",
+  "/teams": "pages/teams.html",
+  "/404": "pages/404.html"
+}
