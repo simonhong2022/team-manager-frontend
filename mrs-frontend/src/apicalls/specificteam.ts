@@ -5,7 +5,7 @@ type TeamRequestDto = {
     name: string;
 }
 
-const BASE_PATH: string = 'https://teammanager-backend-app.azurewebsites.net/api/teams';
+const BASE_PATH: string = `${process.env.NEXT_PUBLIC_PORT}/api/teams`;
 
 export async function fetchTeam(teamid: string | string[], setTeam: Dispatch<SetStateAction<teamDto>>) {
     const response = await fetch(`${BASE_PATH}/${teamid}`);

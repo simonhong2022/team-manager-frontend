@@ -9,7 +9,7 @@ export type EmployeeRequestDto = {
     teamId: string;
 }
 
-const BASE_PATH: string = 'https://teammanager-backend-app.azurewebsites.net/api/employees';
+const BASE_PATH: string = `${process.env.NEXT_PUBLIC_PORT}/api/employees`;
 
 export async function fetchAllEmployees(setEmployees: Dispatch<SetStateAction<employeeDto[]>>) {
     const response = await fetch(BASE_PATH);

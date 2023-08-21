@@ -2,7 +2,7 @@ import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { NextApiRequest } from "next";
 
-const BASE_PATH: string = 'https://teammanager-backend-app.azurewebsites.net/api/login';
+const BASE_PATH: string = `${process.env.NEXT_PUBLIC_PORT}/api/login`;
 
 export default NextAuth({
     providers: [

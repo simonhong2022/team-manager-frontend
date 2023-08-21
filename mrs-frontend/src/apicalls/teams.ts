@@ -10,7 +10,7 @@ type MoveEmployeeDTO = {
     teamToId: string;
 }
 
-const BASE_PATH: string = 'https://teammanager-backend-app.azurewebsites.net/api/teams';
+const BASE_PATH: string =  `${process.env.NEXT_PUBLIC_PORT}/api/teams`;
 
 export async function fetchTeams(setTeams: Dispatch<SetStateAction<teamDto[]>>) {
     const response = await fetch(BASE_PATH);
@@ -70,6 +70,6 @@ export async function updateEmployeeTeam(empId: string, teamToId: string,
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reqBody)
     };
-    const response = await fetch('https://teammanager-backend-app.azurewebsites.net/api/employees', reqOptions);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/employees`, reqOptions);
     await fetchTeams(setTeams);
 }
