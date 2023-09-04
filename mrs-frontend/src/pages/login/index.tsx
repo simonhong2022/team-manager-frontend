@@ -1,12 +1,13 @@
-/* import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Login() {
-    const {data: session, status} = useSession();
-    const loading = status === "loading";
-    if (status === "authenticated" && session.user) {
+   // const {data: session, status} = useSession();
+   // const loading = status === "loading";
+   // if (status === "authenticated" && session.user)
+    {
         return (
             <>
-                Signed in as {session.user.email} <br />
+                Signed in as {/* {session.user.email} */} <br />
                 <button onClick={() => signOut()}>Sign out</button>
             </>
         )
@@ -17,4 +18,4 @@ export default function Login() {
             <button onClick={() => signIn()}>Sign in</button>
         </>
     )
-} */
+}
