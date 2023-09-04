@@ -9,8 +9,8 @@ import { Button, Modal, Input, Icon, Form, Label, Message } from 'semantic-ui-re
 
 
 export default function EmployeesContent() {
-    const { data: session, status } = useSession();
-    const loading = status === "loading";
+    //const { data: session, status } = useSession();
+    //const loading = status === "loading";
 
     const [employees, setEmployees] = useState<employeeDto[]>([]);
     const [teams, setTeams] = useState<teamDto[]>([]);
@@ -21,7 +21,8 @@ export default function EmployeesContent() {
     const [open, setOpen] = useState(false);
     const [dropdownTeam, setDropdownTeam] = useState<string>("");
     const [errMessage, setErrMessage] = useState<string>("");
-    if (status === "authenticated") {
+   // if (status === "authenticated") 
+    {
         return (
             <div className="employees-content-wrap">
                 <div className="employees-add-info">
@@ -64,7 +65,7 @@ export default function EmployeesContent() {
                             </Message> : null}
                         </Modal.Content>
                     </Modal>
-                    <Button className="employees-signout-btn" size="tiny" onClick={() => signOut()}>Sign out</Button>
+                    {/* <Button className="employees-signout-btn" size="tiny" onClick={() => signOut()}>Sign out</Button> */}
                 </div>
                 <div className="employees-person-box">
                     {employees.map(emp => {

@@ -7,15 +7,16 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
 export default function TeamsContent() {
-    const { data: session, status } = useSession();
-    const loading = status === "loading";
+   // const { data: session, status } = useSession();
+   // const loading = status === "loading";
     const [teams, setTeams] = useState<teamDto[]>([]);
     useEffect(() => {
         fetchTeams(setTeams);
     }, []);
     const [open, setOpen] = useState(false);
     const [errMessage, setErrMessage] = useState<string>("");
-    if (status === "authenticated") {
+  //  if (status === "authenticated") 
+    {
         return (
             <div className="teams-content-wrap">
                 <div className="teams-add-info">
@@ -42,7 +43,7 @@ export default function TeamsContent() {
                             </Message> : null}
                         </Modal.Content>
                     </Modal>
-                    <Button className="teams-signout-btn" size="tiny" onClick={() => signOut()}>Sign out</Button>
+                   {/*  <Button className="teams-signout-btn" size="tiny" onClick={() => signOut()}>Sign out</Button> */}
                     <Popup className="teams-helphover" content='Drag an employee to a different team to move them.'
                         trigger={<Button color="orange" icon='question' />} />
                 </div>
