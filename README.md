@@ -8,7 +8,7 @@ The project is a full-stack team management application. The frontend allows the
 The frontend was built in Typescript using React and the Next.js framework, and deployed with Vercel.
 
 ## How to run the application:
-- Click on the vercel link: https://autosurvey.vercel.app/
+- Click on the vercel link: https://teammanager.up.railway.app/
   or
 - After cloning the repository, install all the dependencies: npm install
 - Run the application: npm run dev
